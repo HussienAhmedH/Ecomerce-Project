@@ -17,13 +17,16 @@ body {
 .navbar-brand img {
     margin-right: 10px;
 }
-
+nav{
+    max-height: 6rem;
+    min-height:6rem ;
+}
 .nav-link {
     color: white;
     font-size: 18px;
 }
 .nav-item a{
-    margin: 2rem;
+    margin:0rem 2rem;
     
 }
 
