@@ -35,13 +35,17 @@ nav{
     border-bottom: 2px solid #ffffff;
 }
 
+.navbar-toggler{
+    color: white;
+}
+
 .text-darkblue {
     color: #384e5c;
     background-color: #ffffff;
 }
  
-.bg-light {
-    background-color: #f0f0f0 !important;
+.responsive-height{
+    height: 6rem;
 }
 
 .sale-banner img {
@@ -57,7 +61,7 @@ nav{
 }
 
 
-.card {
+.login {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -80,4 +84,7 @@ h3 {
     background-color: var(--darkblue);
     color: white;
     font-size: 14px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
