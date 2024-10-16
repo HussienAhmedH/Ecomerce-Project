@@ -22,6 +22,10 @@ body {
     color: white;
     font-size: 18px;
 }
+.nav-item a{
+    margin: 2rem;
+    
+}
 
 .nav-link.active {
     font-weight: bold;
