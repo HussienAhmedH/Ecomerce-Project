@@ -1,0 +1,76 @@
+:root{
+    --darkblue: #384e5c;
+}
+body {
+    background-color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+}
+
+.bg-darkblue{
+    background-color: var(--darkblue);
+}
+
+.navbar {
+    background-color: var(--darkblue);
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+.nav-link {
+    color: white;
+    font-size: 18px;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    border-bottom: 2px solid #ffffff;
+}
+
+.text-darkblue {
+    color: #384e5c;
+    background-color: #ffffff;
+}
+ 
+.bg-light {
+    background-color: #f0f0f0 !important;
+}
+
+.sale-banner img {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.sale-label {
+    font-weight: bold;
+    font-size: 24px;
+    border-radius: 10px 0 0 10px;
+}
+
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    color: #384e5c;
+}
+
+.btn-darkblue {
+    background-color: var(--darkblue);
+    border-color: var(--darkblue);
+}
+
+.btn-darkblue:hover {
+    background-color: var(--darkblue);
+    border-color: var(--darkblue);
+}
+
+.footer {
+    background-color: var(--darkblue);
+    color: white;
+    font-size: 14px;
+}
