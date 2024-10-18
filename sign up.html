@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Sign Up</title>
     <script src="js/script.js" defer></script>
     <link rel="stylesheet" href="bootstrap-5/css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
@@ -40,22 +40,32 @@
                 <h3 class="text-center mb-4">Sign Up</h3>
                 <form>
                   <div class="mb-3">
-                    <label for="username" class="form-label">Username</label>
-                    <input type="text" class="form-control" id="username" placeholder="Enter your username" required>
+                    <label for="username1" class="form-label">First Name:</label>
+                    <input type="text" name="us1" class="form-control" id="username1" placeholder="Enter your first name" required>
                   </div>
                   <div class="mb-3">
-                    <label for="email" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    <label for="username2" class="form-label">Last Name:</label>
+                    <input type="text" name="us2" class="form-control" id="username2" placeholder="Enter your last name" required>
                   </div>
                   <div class="mb-3">
-                    <label for="password" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+                    <label for="email" class="form-label">Email Address:</label>
+                    <input type="email" name="email" class="form-control" id="email" placeholder="Enter your email" required>
                   </div>
                   <div class="mb-3">
-                    <label for="confirmPassword" class="form-label">Confirm Password</label>
-                    <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm your password" required>
+                    <label for="password" class="form-label">Password:</label>
+                    <input type="password" name="pass" class="form-control" id="password" placeholder="Enter your password" required>
                   </div>
-                  <button type="submit" class="btn btn-darkblue text-white w-100">Sign Up</button>
+                  <div class="mb-3">
+                    <label for="confirmPassword" class="form-label">Confirm Password:</label>
+                    <input type="password" name="conpass" class="form-control" id="confirmPassword" placeholder="Confirm your password" required>
+                  </div>
+                  <div class="res">
+                    <input class="mar" type="checkbox" id="ag" name="agreement" value="agree" required>
+                    <label class="inline" for="ag">I have read and agree to the privacy policy, terms of service, and community guidelines.</label>
+                  </div>
+                  <div>
+                    <button type="submit" class="btn btn-darkblue text-white w-100">Sign Up</button>
+                  </div>
                 </form>
               </div>
             </div>
