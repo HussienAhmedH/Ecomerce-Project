@@ -174,9 +174,19 @@ img{
     background-color: var(--darkblue);
     color: white;
     font-size: 14px;
-    position: absolute;
     bottom: 0;
     width: 100%;
     margin-top: 1rem;
 }
 
+
+.res{
+  display: flex;
+}
+.inline{
+  display: inline;
+  margin-top: 20px;
+}
+.mar{
+  margin-right: 15px;
+}
