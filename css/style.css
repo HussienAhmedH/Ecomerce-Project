@@ -169,6 +169,51 @@ img{
     border: none;
 }
 
+.card {
+  width: 350px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  margin: 20px auto;
+
+}
+.card img:hover{
+transform: scale(1.1);
+
+}
+.cards{
+display:flex;
+flex-direction: row;
+justify-content: space-around;
+position: relative;
+}
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: 0.7s ease;
+
+}
+
+.card-content {
+  background-color: ;
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin: 0;
+  color: var(--darkblue);
+}
+
+.card-description {
+  font-size: 1em;
+  color: #222;
+  margin-top: 10px;
+}
+
 
 .footer {
     background-color: var(--darkblue);
