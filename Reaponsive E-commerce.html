@@ -15,130 +15,218 @@
   </head>
   <body>
 
-    <!--navbar-->
-    <nav class="navbar navbar-expand-lg bg-darkblue ">
-      <div class="container">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <a class="navbar-brand" href="#">
-            <img src="images/logo.png" alt="Swift Deals Logo" class="logo-responsive-height" />
-          </a>
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#About">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Products</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">your cart</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-          <a href="Login.html" class="btn btn-outline-light ms-auto">Get Started</a>
-        </div>
-      </div>
-    </nav>
+<!--navbar-->
+<nav class="navbar navbar-expand-lg bg-darkblue sticky-top">
+  <div class="container">
+    <!-- Navbar Toggler (hamburger button) -->
+    <button
+    class="navbar-toggler"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarNav"
+    aria-controls="navbarNav"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
 
-  <!-- carousel -->
-  <div id="carouselExample" class="carousel slide ">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active c-item">
-        <img src="images/carousel 1.jpg" class="d-block mt-0 w-100 c-img">
-        <div class=" carousel-caption1-position carousel-caption d-none d-md-block">
-          <h4>Welcome to Swift Deal</h4>
-          <p>Get started at what will be your best shopping experience</p>
-          <button class="btn btn-darkblue fs-5 p-3">Sign Up now</button> 
+    <!-- Logo -->
+    <a class="navbar-brand" href="#">
+      <img src="images/logo.png" alt="Swift Deals Logo" class="logo-responsive-height img-fluid" />
+    </a>
+
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse text-lg-start text-center" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+        <!-- Home -->
+        <li class="nav-item">
+          <a class="nav-link btn btn-darkblue border-0" aria-current="page" href="#">Home</a>
+        </li>
+
+        <!-- About Us -->
+        <li class="nav-item">
+          <a class="nav-link btn btn-darkblue border-0" href="#About">About Us</a>
+        </li>
+
+        <!-- Products -->
+        <li class="nav-item">
+          <a class="nav-link btn btn-darkblue border-0" href="Products.html">Products</a>
+        </li>
+
+        <!-- Your Cart -->
+        <li class="nav-item">
+          <button type="button" class=" nav-link btn btn-darkblue border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Your Cart
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Your Cart</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Order</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- Contact -->
+        <li class="nav-item">
+          <a class="nav-link btn btn-darkblue border-0" href="Contacts.html">Contact</a>
+        </li>
+      </ul>
+
+      <!-- Log in / Sign Up buttons -->
+      <div class="ms-auto text-lg-end text-center">
+        <div class="btn-group" role="group">
+          <a href="Login.html" class="btn btn-outline-light rounded-start">Log in</a>
+          <a href="sign up.html" class="btn btn-outline-light rounded-end">Sign Up</a>
         </div>
       </div>
-      <div class="carousel-item c-item">
-        <img src="images/carousel 2.jpg" class="d-block mt-0 w-100 c-img" >
-      </div>
-      <div class="carousel-item c-item">
-        <img src="images/carousel 3.jpg" class="d-block mt-0 w-100 c-img" >
-        <div class=" carousel-caption2-position carousel-caption d-none d-md-block">
-          <h4>Curious?</h4>
-          <p>Get to know our biggest discounts</p>
-          <button class="btn btn-darkblue p-2">Check our products</button> 
-        </div>
-      </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+  </div>
+</nav>
+
+
+ <!-- carousel -->
+<div id="carouselExample" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
 
-    
+  <div class="carousel-inner">
+    <!-- Slide 1 -->
+    <div class="carousel-item active c-item">
+      <img src="images/carousel 1.jpg" class="d-block mt-0 w-100 c-img img-fluid" alt="First Slide">
+      <div class="carousel-caption1-position carousel-caption d-none d-md-block">
+        <h4>Welcome to Swift Deal</h4>
+        <p>Get started at what will be your best shopping experience</p>
+        <a href="sign up.html">
+          <button class="btn btn-darkblue fs-5 p-md-3 p-2">Sign Up now</button>
+        </a>
+      </div>
+    </div>
 
-    <section class="features" id="features">
-      <div class="container">
-          <h3 class="section-title text-center"> our  features  </h3>
-          <!-- first flex row  which have 2 cards -->
-              <div class="d-flex flex-column-md card-row card-row1">
-                  <!-- card 1 -->
-<div class="card">
-  <i class="fas fa-laptop card-icon"></i>
-  <h4 class="card-title">Powerful Computing</h4>
-  <p class="card-description description-text">Experience unparalleled performance and speed for your computing needs.</p>
-</div>
-<!-- card 2 -->
-<div class="card">
-  <i class="fas fa-dollar-sign card-icon"></i>
-  <h4 class="card-title">Affordable Solutions</h4>
-  <p class="card-description description-text">Get high-quality technology without breaking the bank.</p>
-</div>
+    <!-- Slide 2 -->
+    <div class="carousel-item c-item">
+      <img src="images/carousel 2.jpg" class="d-block mt-0 w-100 c-img img-fluid" alt="Second Slide">
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-item c-item">
+      <img src="images/carousel 3.jpg" class="d-block mt-0 w-100 c-img img-fluid" alt="Third Slide">
+      <div class="carousel-caption2-position carousel-caption d-none d-md-block">
+        <h4>Curious?</h4>
+        <p>Get to know our biggest discounts</p>
+        <a href="Products.html">
+          <button class="btn btn-darkblue p-md-3 p-2">Check our products</button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Carousel Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
 
-<!-- second flex row   which have 3 cards -->
 
-<div class="d-flex flex-column-md card-row card-row2">
-
-  <!-- card 3 -->
-  <div class="card">
-      <i class="fas fa-store card-icon"></i>
-  <h4 class="card-title">Versatile Options</h4>
-  <p class="card-description description-text">Explore a wide range of products to suit your needs.</p>
-</div>
-<!-- card 4 -->
-<div class="card">
-  <i class="fas fa-search card-icon"></i>
-  <h4 class="card-title">Efficient Search</h4>
-  <p class="card-description description-text">Find what you're looking for quickly and easily.</p>
-</div>
-<!-- card 5 -->
-<div class="card">
-  <i class="fas fa-shopping-cart card-icon"></i>
-  <h4 class="card-title">Convenient Shopping</h4>
-  <p class="card-description description-text">Enjoy seamless shopping experiences right at your fingertips.</p>
-</div>
-</div>
-                  
+  <section class="features" id="features">
+    <div class="container">
+      <h3 class="section-title text-center">Our Features</h3>
+  
+      <!-- First row with 2 cards -->
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-md-6">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-laptop card-icon"></i>
+              <h4 class="card-title">Powerful Computing</h4>
+              <p class="card-description description-text">
+                Experience unparalleled performance and speed for your computing needs.
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Card 2 -->
+        <div class="col-md-6">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-dollar-sign card-icon"></i>
+              <h4 class="card-title">Affordable Solutions</h4>
+              <p class="card-description description-text">
+                Get high-quality technology without breaking the bank.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Second row with 3 cards -->
+      <div class="row g-4 mt-4">
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-store card-icon"></i>
+              <h4 class="card-title">Versatile Options</h4>
+              <p class="card-description description-text">
+                Explore a wide range of products to suit your needs.
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Card 4 -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-search card-icon"></i>
+              <h4 class="card-title">Efficient Search</h4>
+              <p class="card-description description-text">
+                Find what you're looking for quickly and easily.
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Card 5 -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-shopping-cart card-icon"></i>
+              <h4 class="card-title">Convenient Shopping</h4>
+              <p class="card-description description-text">
+                Enjoy seamless shopping experiences right at your fingertips.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
+  
 
 
 <!-- products -->

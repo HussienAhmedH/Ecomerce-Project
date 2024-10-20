@@ -11,6 +11,7 @@ body {
     background-color: var(--darkblue);
 }
 
+/*navbar*/
 
 .navbar-brand img {
     margin-right: 10px;
@@ -45,6 +46,55 @@ nav{
 .logo-responsive-height{
     height: 6rem;
 }
+
+/*navbar toggler*/
+
+.navbar-toggler {
+  background-color: white; /* White background for the button */
+  border: none; /* Remove border if preferred */
+}
+
+/* Customizing the Toggler Icon (Hamburger) */
+.navbar-toggler-icon {
+  background-image: none; /* Remove default Bootstrap icon */
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+
+/* Hamburger bars */
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: darkblue; /* Dark blue color for the bars */
+}
+
+.navbar-toggler-icon::before {
+  top: 0;
+}
+
+.navbar-toggler-icon::after {
+  bottom: 0;
+}
+
+/* Middle bar */
+.navbar-toggler-icon::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: darkblue;
+  transform: translateY(-50%);
+}
+
+/*sale banner*/
 
 .sale-banner img {
     border-radius: 10px;
@@ -102,6 +152,38 @@ h3 {
 .carousel-caption2-position{
   bottom: 3rem;
 }
+
+
+@media (max-width: 767.98px) {
+  .btn-darkblue:hover {
+    background-color: var(--darkblue);
+    border-color: var(--darkblue);
+    background-color: white;
+    color:var(--darkblue);
+}
+
+/*carousel*/
+
+.c-item{
+  height: 20rem;
+}
+
+.c-img{
+  height: 100%;
+  object-fit: fill ;
+  filter: brightness(0.8);
+}
+
+.carousel-caption1-position{
+  right:50rem;
+  bottom: 12.5rem;
+}
+
+.carousel-caption2-position{
+  bottom: 3rem;
+}
+}
+
 
 /*start  features section*/
 .features .section-title {

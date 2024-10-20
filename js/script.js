@@ -1,3 +1,11 @@
+const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+})
+
+
 document.getElementById('loginForm').addEventListener('submit', function(event) {
     event.preventDefault();
     
@@ -11,4 +19,5 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 
     alert("Login successful!");
 });
+
 
