@@ -1,8 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
 
 :root{
     --darkblue: #384e5c;
@@ -16,9 +11,6 @@ body {
     background-color: var(--darkblue);
 }
 
-.navbar {
-    background-color: var(--darkblue);
-}
 
 .navbar-brand img {
     margin-right: 10px;
@@ -50,7 +42,7 @@ nav{
     background-color: #ffffff;
 }
  
-.responsive-height{
+.logo-responsive-height{
     height: 6rem;
 }
 
@@ -79,11 +71,36 @@ h3 {
 .btn-darkblue {
     background-color: var(--darkblue);
     border-color: var(--darkblue);
+    color: #ffffff;
+    border: .05rem solid white;
 }
 
 .btn-darkblue:hover {
     background-color: var(--darkblue);
     border-color: var(--darkblue);
+    background-color: white;
+    color:var(--darkblue);
+}
+
+/*carousel*/
+
+.c-item{
+  height: 40rem;
+}
+
+.c-img{
+  height: 100%;
+  object-fit: fill ;
+  filter: brightness(0.8);
+}
+
+.carousel-caption1-position{
+  right:50rem;
+  bottom: 12.5rem;
+}
+
+.carousel-caption2-position{
+  bottom: 3rem;
 }
 
 /*start  features section*/
@@ -97,11 +114,7 @@ h3 {
     margin: 0 auto;
     text-transform: capitalize;
     font-size: 2.5rem;
-    position: relative;
-    cursor: default;
-    background: linear-gradient(45deg, #1d997a 50%, #ff00ff 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--darkblue);
 }
   
   .features .card {
@@ -198,7 +211,6 @@ position: relative;
 }
 
 .card-content {
-  background-color: ;
   padding: 15px;
 }
 
